@@ -1,0 +1,298 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-primary-color: #333333;
+    --text-primary: #ffffff;
+    --text-secondary: #000000;
+    --text-tertary: #F7B0B9;
+    --bg-secondary-color: #000;
+}
+
+.first {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.90) 100%), url("back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+}
+
+.first h1 {
+    color: var(--text-primary);
+    z-index: 9;
+    position: relative;
+    padding: 0px 50px;
+    font-size: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.first h1 span {
+    color: orange;
+    font-size: 72px;
+}
+
+/* .overlay {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+} */
+
+
+.about {
+    color: var(--text-secondary);
+    display: flex;
+    padding: 10px 10px;
+}
+
+.about img {
+    object-fit: cover;
+    flex: 1;
+
+}
+
+
+.about>div {
+    flex: 1;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about>div>div {
+    max-width: 500px;
+}
+
+.about>div>div>h3 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about>div>div>p {
+    font-size: large;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.journey {
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 10px;
+}
+
+.journey .splide img {
+    width: 100%;
+}
+
+.journey .splide .splide__slide {
+    padding-right: 10px;
+}
+
+.journey h3 {
+    font-size: 40px;
+    text-align: center;
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.journey>div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.journey>div>div>span {
+    font-size: 20px;
+    color: var(--text-tertary);
+}
+
+.journey>div>div>p {
+    font-size: 18px;
+}
+
+.journey .splide {
+    margin-top: 30px;
+}
+
+.services {
+    margin: auto;
+    padding: 60px 0px;
+    background-color: #f1f1f1;
+}
+
+.services>h3 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 7px 10px 14px -4px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 7px 10px 14px -4px rgba(0, 0, 0, 0.65);
+    box-shadow: 7px 10px 14px -4px rgba(0, 0, 0, 0.65);
+    background-color: var(--bg-primary-color);
+
+}
+
+.service-card .desc {
+    background-color: var(--bg-primary-color);
+    padding: 15px;
+    color: var(--text-primary);
+}
+
+.service-card .desc h6 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 920px) {
+
+
+    .about {
+        flex-direction: column-reverse;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    .about>img {
+        margin-top: 20px;
+    }
+
+    .about>div>div>h3 {
+        font-size: 38px;
+    }
+
+    .about>div>div>p {
+        font-size: 16px;
+    }
+
+    .about>div {
+        padding: 0px 10px;
+    }
+
+    .card-container {
+        grid-template-columns: 33% 33% 33%;
+        gap: 20px;
+        max-width: 600px;
+    }
+
+    .first {
+        background-position-x: 70%;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    .first {
+        background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.90) 100%), url("back-small.jpg");
+        padding: 0px;
+    }
+
+    .first h1 {
+        font-size: 24px;
+    }
+
+    .first h1>span {
+        font-size: 42px;
+    }
+
+    .overlay {
+        display: block;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    .about>img {
+        margin-top: 20px;
+    }
+
+    .about>div>div>h3 {
+        font-size: 38px;
+    }
+
+    .about>div>div>p {
+        font-size: 16px;
+    }
+
+    .about>div {
+        padding: 0px 10px;
+    }
+
+    .journey {
+        padding: 30px 10px;
+    }
+
+    .journey h3 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .journey>div>div>span {
+        font-size: 16px;
+    }
+
+    .journey>div>div>p {
+        font-size: 14px;
+    }
+
+    .journey .splide {
+        margin-top: 50px;
+    }
+
+    .journey .splide img {
+        width: 100%;
+    }
+
+    .services {
+        padding: 15px 10px;
+    }
+
+    .services>h3 {
+        font-size: 38px;
+    }
+
+    .card-container {
+        grid-template-columns: 100%;
+    }
+
+}

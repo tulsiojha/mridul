@@ -15,7 +15,7 @@ body {
     --bg-primary-color: #333333;
     --text-primary: #ffffff;
     --text-secondary: #000000;
-    --text-tertary: #F7B0B9;
+    --text-tertary: orange;
     --bg-secondary-color: #000;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .first h1 span {
-    color: orange;
+    color: var(--text-tertary);
     font-size: 72px;
 }
 

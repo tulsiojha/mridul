@@ -15,7 +15,7 @@ body {
     --bg-primary-color: #333333;
     --text-primary: #ffffff;
     --text-secondary: #000000;
-    --text-tertary: #F7B0B9;
+    --text-tertary: orange;
     --bg-secondary-color: #000;
 }
 
@@ -105,7 +105,7 @@ footer .copyright {
 }
 
 .headlines h5 {
-    color: orange;
+    color: var(--text-tertary);
     font-size: 44px;
     font-weight: bolder;
 
@@ -120,13 +120,13 @@ footer .copyright {
 }
 
 .pricing .pricing-card {
-    border: 3px solid orange;
+    border: 3px solid var(--text-tertary);
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: orange;
+    color: var(--text-tertary);
     z-index: 9999;
     transition: all 0.5s;
     cursor: pointer;
@@ -134,7 +134,7 @@ footer .copyright {
 }
 
 .pricing .pricing-card:hover {
-    background-color: orange;
+    background-color: var(--text-tertary);
     color: white;
 }
 
